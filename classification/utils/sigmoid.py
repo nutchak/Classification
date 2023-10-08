@@ -2,8 +2,7 @@ import numpy as np
 
 
 def sigmoid(z: float) -> float:
-    """
-    A sigmoid function
+    """A sigmoid function
 
     Parameters
     ----------

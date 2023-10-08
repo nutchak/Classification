@@ -1,6 +1,6 @@
 import numpy as np
 
-from regression.logistic_classification import LogisticClassification
+from classification.logistic_classification import LogisticClassification
 
 
 class OneVsRestLogisticRegression:

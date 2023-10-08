@@ -1,8 +1,8 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-from regression.utils.accuracy import accuracy
-from regression.utils.add_bias import add_bias
+from classification.utils.accuracy import accuracy
+from classification.utils.add_bias import add_bias
 
 
 def cross_entropy(y_predicted, y):

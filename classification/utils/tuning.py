@@ -1,12 +1,12 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from tqdm import tqdm
 
-from regression.utils.accuracy import accuracy
+from classification.utils.accuracy import accuracy
 
 
 def tuning(reg, X_train: np.array, eta_start: float, eta_stop: float, eta_step:float, epoch_start: int, epoch_stop: int, epoch_step: int) -> np.array:
-    """
-    A function for plotting given range of eta and epochs
+    """A function for plotting given range of eta and epochs
 
     Parameters
     ----------
@@ -69,3 +69,4 @@ def tuning(reg, X_train: np.array, eta_start: float, eta_stop: float, eta_step:f
     plt.title('Plot of meshgrid of eta and epoch')
     plt.show()
     return eta_epoch
+

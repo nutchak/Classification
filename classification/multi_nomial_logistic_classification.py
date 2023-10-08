@@ -1,13 +1,13 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-from regression.utils.accuracy import accuracy
-from regression.utils.add_bias import add_bias
-from regression.utils.classifier import classifier
-from regression.utils.cross_entropy import cross_entropy
-from regression.utils.gradient import gradient
-from regression.utils.one_hot_encoding import one_hot_encoding
-from regression.utils.softmax import softmax
+from classification.utils.accuracy import accuracy
+from classification.utils.add_bias import add_bias
+from classification.utils.classifier import classifier
+from classification.utils.cross_entropy import cross_entropy
+from classification.utils.gradient import gradient
+from classification.utils.one_hot_encoding import one_hot_encoding
+from classification.utils.softmax import softmax
 
 
 class MultinomialClassification:

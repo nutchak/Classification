@@ -1,11 +1,11 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-from regression.utils.accuracy import accuracy
-from regression.utils.add_bias import add_bias
-from regression.utils.binary_cross_entropy import binary_cross_entropy
-from regression.utils.gradient import gradient
-from regression.utils.sigmoid import sigmoid
+from classification.utils.accuracy import accuracy
+from classification.utils.add_bias import add_bias
+from classification.utils.binary_cross_entropy import binary_cross_entropy
+from classification.utils.gradient import gradient
+from classification.utils.sigmoid import sigmoid
 
 
 class LogisticClassification:

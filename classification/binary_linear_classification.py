@@ -1,24 +1,28 @@
+"""
+Binary Linear Classification
+"""
+
 import numpy as np
 
-from regression.utils.gradient import gradient
-from regression.utils.accuracy import accuracy
-from regression.utils.mse import mse
+from classification.utils.gradient import gradient
+from classification.utils.accuracy import accuracy
+from classification.utils.mse import mse
 from utils.add_bias import add_bias
 import matplotlib.pyplot as plt
 
 
 class BinaryLinearClassification:
+    """Binary linear classification
 
+    Parameters
+    ----------
+    bias : `int`, default=-1
+        The value of bias to add
+    threshold : `float`, default=0.5
+        Threshold for classification
+    """
     def __init__(self, bias=-1, threshold=0.5):
-        """A class for binary linear classification
 
-        Parameters
-        ----------
-        bias : `int`, default=-1
-            The value of bias to add
-        threshold : `float`, default=0.5
-            Threshold for classification
-        """
         self.bias = bias
         self.threshold = threshold
         self.weights = None
